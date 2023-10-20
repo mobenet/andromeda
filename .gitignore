@@ -1,0 +1,29 @@
+# Archivos de registro
+*.log
+npm-debug.log*
+
+# Directorio de node_modules
+node_modules/
+
+# Archivos de entorno
+.env
+
+# Directorios de caché
+.cache/
+dist/
+
+# Configuraciones de editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Otros archivos y directorios que podrías querer excluir
+*.tmp
+*.bak
+*.sass-cache
+*.next
