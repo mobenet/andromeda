@@ -9,9 +9,9 @@ app.set('view engine', 'ejs');
 // Sirve archivos estáticos desde el directorio 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/imagen/:img', (req, res) => {
-    const imagen = req.params.img;
-    res.render('imagen', { imagen });
+app.get('/images/:img', (req, res) => {
+    const image = req.params.img;
+    res.render('image', { image });
 });
 
 
