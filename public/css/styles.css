@@ -111,3 +111,27 @@ label, input, textarea {
     padding: 20px;    /* Espaciado interno para que no esté todo pegado al borde */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para darle un poco de profundidad */
 }
+
+#image-window-container {
+    text-align: center;
+}
+
+#image-window {
+    max-width: 100%;
+    max-height: 100vh; /* Ajusta la altura máxima según tus necesidades */
+    display: inline-block; /* Centra la imagen horizontalmente */
+}
+
+/* Estilos específicos para la imagen en grande */
+/* Puedes personalizar estos estilos según tus preferencias */
+#image-window-container {
+    border: 2px solid #333;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+#image-window {
+    display: block;
+    margin: 0 auto;
+}

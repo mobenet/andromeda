@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANDROMEDA FX STUDIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+    <!-- Incluye tus hojas de estilo CSS y otros elementos comunes aquí -->
+</head>
+<body>
+
+    <header>
+        <a href="#" id="logo-btn" class="logo-img">
+            <img src="images/favicon.jpg" alt="Descripción de la imagen" class="logo-img">
+        </a>
+        <h1>ANDROMEDA FX STUDIO</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio">Inicio</a></li>
+               <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="image-window-container">
+        <img id="image-window" src="" alt="Imagen en grande">
+    </div>
+
+    <script>
+        // Obtén el nombre de la imagen de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const imgName = urlParams.get("img");
+
+        // Construye la URL de la imagen en grande
+        const imageUrl = `images/${imgName}`;
+
+        // Muestra la imagen en el elemento "imagen-grande"
+        const imagenGrande = document.getElementById("image-window");
+        imagenGrande.src = imageUrl;
+
+
+        document.querySelector('#logo-btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.open("index.html");
+        })
+        document.querySelector('h1').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.open("index.html");
+        })
+    </script>
+</body>
+</html>
