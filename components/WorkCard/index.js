@@ -1,10 +1,17 @@
 import React from "react";
+import Link from "next/link";
 
-const WorkCard = ({ img, name, description, onClick }) => {
+/* Props del cmp: 
+    - id: del proyecto 
+    - img: url de la imagen que se muestra en la tarjeta
+    - name: el nombre del proyecto o trabajo
+    - description del proyecto
+    - onClick: funcion que se ejecuta al hacer click (ya no lo usamos)*/
+const WorkCard = ({ id, img, name, description }) => {
   return (
+    <Link href={`/projects/${id}`}>
     <div
       className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link"
-      onClick={onClick}
     >
       <div
         className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto"
@@ -23,6 +30,7 @@ const WorkCard = ({ img, name, description, onClick }) => {
         {description ? description : "Description"}
       </h2>
     </div>
+    </Link>
   );
 };
 
